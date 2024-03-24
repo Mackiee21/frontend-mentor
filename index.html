@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Multi-step form</title>
+  
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <sidebar>
+        <div class="step-container">
+          <div class="circle active">1</div>
+          <div class="step-wrapper">
+            <p>Step 1</p>
+            <span>YOUR INFO</span>
+          </div>
+        </div>
+        <div class="step-container">
+          <div class="circle">2</div>
+          <div class="step-wrapper">
+            <p>Step 2</p>
+            <span>SELECT PLAN</span>
+          </div>
+        </div>
+        <div class="step-container">
+          <div class="circle">3</div>
+          <div class="step-wrapper">
+            <p>Step 3</p>
+            <span>ADD ONS</span>
+          </div>
+        </div>
+        <div class="step-container">
+          <div class="circle">4</div>
+          <div class="step-wrapper">
+            <p>Step 4</p>
+            <span>SUMMARY</span>
+          </div>
+        </div>
+      </sidebar>
+      <section>
+      <main>
+        <div  class="content">
+          <h1 class="heading">Personal Info</h1>
+          <p class="sub-heading">Please provide your name, email address, and phone number.</p>
+          
+          <div class="input-wrapper">
+            <b>Name</b>
+            <input type="text" placeholder="e.g. Stephen King" />
+          </div>
+          <div class="input-wrapper">
+            <b>Email Address</b>
+            <input type="text" placeholder="e.g. stephenking@lorem.com" />
+          </div>
+          <div class="input-wrapper">
+            <b>Phone Number</b>
+            <input type="text" placeholder="e.g. +1 234 567 890" />
+          </div>
+        </div>
+      </main>
+      <div class="btn-wrapper">
+        <button data-button="back" id="backBtn" class="hidden">Go Back</button>
+        <button id="nextBtn">Next Step</button>
+      </div>
+      </section>
+
+      <script src="index.js"></script>
+</body>
+</html>
